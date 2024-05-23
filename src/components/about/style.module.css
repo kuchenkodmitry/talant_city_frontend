@@ -1,0 +1,111 @@
+.aboutSection {
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    padding: 0 0 100px 0;
+}
+
+.leftColumn {
+    width: 550px;
+}
+
+.RightColumn {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h4title {
+    font-family: "InterBold";
+    font-size: 20px;
+}
+
+.paragraphStyle {
+    font-family: "InterRegular";
+    font-size: 16px;
+}
+
+.aboutTitle {
+    font-family: 'InterBold';
+    font-size: 32px;
+}
+.logoGoorodTalantov{
+    width: 400px;
+    animation: 13s linear infinite rotate;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  @media screen and (max-width : 1304px) {
+    .aboutSection {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: row;
+        gap: 20px;
+        padding: 0 50px  ;
+    }
+
+    .leftColumn {
+        width: 50%;
+    }
+
+    .RightColumn {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    .RightColumn>img{
+        height: 10px;
+    }
+    .logoGoorodTalantov{
+        width: 280px;
+        height: 280px;
+    }
+  }
+
+@media screen and (max-width : 1024px) {}
+
+@media screen and (max-width : 835px) {}
+
+@media screen and (max-width : 660px) {
+    .aboutSection {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 20px;
+    }
+
+    .leftColumn {
+        width: 100%;
+    }
+
+    .RightColumn {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    .RightColumn>img{
+        height: 10px;
+    }
+    .logoGoorodTalantov{
+        width: 280px;
+        height: 280px;
+        /* justify-self: flex-start; */
+    }
+}

@@ -1,0 +1,89 @@
+.card {
+    width: 549px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    padding: 30px;
+    /* background-color: aqua; */
+    margin: 0px 20px;
+    border-radius: 24px;
+    /* shadow_small */
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.05);
+    /* colors/white */
+    background: rgb(255, 255, 255);
+    position: relative;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.stars {
+    position: absolute;
+    right: 40px;
+}
+
+.notMargin {
+    margin: 0;
+}
+
+.reviewerName {
+    font-family: 'InterRegular';
+    font-size: 16px;
+}
+
+.courseName {
+    font-family: 'InterSamiBold';
+    font-size: 16px;
+}
+
+.text {
+    font-family: 'InterRegular';
+
+}
+.moileText{
+    display: none;
+}
+@media screen and (max-width : 1024px) {}
+
+@media screen and (max-width : 835px) {}
+
+@media screen and (max-width : 660px) {
+    .card {
+        width: 280px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        padding: 30px;
+        /* background-color: aqua; */
+        margin: 0px 20px;
+        border-radius: 24px;
+        /* shadow_small */
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
+        /* colors/white */
+        background: rgb(255, 255, 255);
+        position: relative;
+        gap: 10px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        margin: 20px 0px 10px 0;
+    }
+
+    .avatar {
+        height: 50px;
+    }
+
+    .text {
+        display: none;
+    }
+
+    .stars {
+        position: absolute;
+        right: 30px;
+        top: 15px;
+    }
+    .moileText{
+        display: flex;
+        font-family: 'InterRegular';
+    }
+}

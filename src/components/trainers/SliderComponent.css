@@ -1,0 +1,102 @@
+/* SliderComponent.css */
+
+.trainersSection{
+  position: relative;
+}
+
+.slider-container {
+    position: relative;
+    width: 650px;
+    /* display: flex; */
+    /* margin: 0 auto; */
+  }
+  .flexCenter{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .slider-controls {
+    position:absolute;
+    top: 70px;
+    left: -20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 600px;
+  }
+  
+  .slider-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  .slider-button:hover {
+    background-color: #0056b3; /* Изменение цвета при наведении */
+  }
+  
+  @media screen and (max-width: 1320px) {
+    .slider-container {
+      width: 450px;
+    }
+    
+    .slider-controls {
+      position:absolute;
+      top: 70px;
+      left: -20px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      gap: 400px;
+    }
+  }
+
+  @media screen and (max-width: 430px) {
+    .slider-container {
+
+      width: 320px;
+    
+    }
+    
+
+    .slider-controls {
+      position:absolute;
+      top: 70px;
+      left: 0px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      gap: 230px;
+    }
+
+  }

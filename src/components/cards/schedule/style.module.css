@@ -1,0 +1,176 @@
+.ScheduleCard {
+    /* Rectangle 2 */
+    width: 1234px;
+    height: 220px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.05);
+    position: relative;
+    padding: 10px 30px;
+}
+
+.cardImage {
+    width: 180px;
+    height: 180px;
+    background-size: cover;
+    border-radius: 17px;
+}
+
+.width {
+    width: 685px;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    /* Включаем флексбоксы */
+    -webkit-box-orient: vertical;
+    /* Вертикальная ориентация */
+    overflow: hidden;
+}
+
+.fontBold {
+    font-family: "InterBold";
+}
+
+.fontRegular {
+    font-family: "InterRegular";
+}
+
+.Buttons {
+    display: flex;
+    gap: 25px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.verticalLine {
+    background-color: rgba(50, 50, 50, 0.251);
+    /* border-bottom: 2px solid ; */
+    height: 130px;
+    width: 1px;
+    margin-bottom: 25px;
+}
+
+.dataSections{
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+.courseContent{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* width: 300px; */}
+
+@media screen and (max-width : 1234px) {
+    .ScheduleCard {
+        /* Rectangle 2 */
+        width: 100%;
+        height: 220px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        border-radius: 20px;
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.05);
+        position: relative;
+        padding: 10px 30px;
+    }
+    .width {
+        width: 685px;
+        -webkit-line-clamp: 4;
+        display: -webkit-box;
+        /* Включаем флексбоксы */
+        -webkit-box-orient: vertical;
+        /* Вертикальная ориентация */
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width : 835px) {}
+
+@media screen and (max-width : 1300px) {
+    .ScheduleCard {
+        /* Rectangle 2 */
+        width: 314px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+        border-radius: 20px;
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.05);
+        position: relative;
+        padding: 10px 20px 70px;
+    }
+    
+    .cardImage {
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+        border-radius: 17px;
+    }
+    
+    .width {
+        width: 305px;
+        -webkit-line-clamp: 4;
+        display: -webkit-box;
+        /* Включаем флексбоксы */
+        -webkit-box-orient: vertical;
+        /* Вертикальная ориентация */
+        overflow: hidden;
+    }
+    
+    .fontBold {
+        font-family: "InterBold";
+    }
+    
+    .fontRegular {
+        font-family: "InterRegular";
+    }
+    
+    .Buttons {
+        display: flex;
+        gap: 25px;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+    
+    .verticalLine {
+        background-color: rgba(50, 50, 50, 0.251);
+        /* border-bottom: 2px solid ; */
+        height: 130px;
+
+        width: 1px;
+        margin-bottom: 25px;
+    }
+    
+    .dataSections{
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        align-items: center;
+        align-self: flex-start;
+        margin-top: 20px;
+        flex-direction: row;
+        
+    }
+    .courseContent{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        /* width: 300px; */
+    }
+    .courseContent>div>p{
+        /* display: flex; */
+        width: 210px;
+        margin: 0;
+    }
+}

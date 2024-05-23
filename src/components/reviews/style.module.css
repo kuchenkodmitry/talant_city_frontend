@@ -1,0 +1,22 @@
+.sliderSize{
+    width: 1300px; 
+    margin: 0 auto;
+}
+
+@media screen and (max-width : 1345px) {
+    .sliderSize{
+        width: 90%; 
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width : 835px) {}
+
+@media screen and (max-width : 660px) {
+    .sliderSize{
+        position: relative;
+        padding: 0;
+        width: 330px; 
+        margin: 0 auto;
+    }
+}

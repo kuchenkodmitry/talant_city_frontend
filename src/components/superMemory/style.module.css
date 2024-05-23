@@ -1,0 +1,182 @@
+.cardForm {
+    width: 1235px;
+    /* height: 220px; */
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.05);
+    position: relative;
+    padding: 10px 30px;
+}
+
+.cardLogo {
+    width: 165px;
+    height: 165px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+}
+
+.title {
+    font-family: "InterBold";
+    font-size: 18px;
+    width: 1050px;
+}
+
+.text {
+    font-family: "InterRegular";
+    font-size: 18px;
+    width: 900px;
+    -webkit-line-clamp: 5;
+    display: -webkit-box;
+    /* Включаем флексбоксы */
+    -webkit-box-orient: vertical;
+    /* Вертикальная ориентация */
+    overflow: hidden;
+}
+
+.btnTitle {
+    font-family: "InterRegular";
+    color: rgb(0, 185, 182);
+}
+
+.moreDetailsButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 60px;
+    top: 170px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.moreDetailsButton:hover {
+    text-decoration: underline;
+    color: rgb(0, 185, 182);
+}
+
+.line {
+    border-bottom: 2px solid rgba(156, 156, 156, 0.094);
+    width: 1250px;
+    margin-bottom: 25px;
+}
+
+.positionContent {
+    cursor: pointer;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.scheduleLabel {
+    font-family: 'InterBold';
+}
+
+.scheduleText {
+    font-family: "InterRegular";
+}
+
+.scheduleTextPosition {
+    display: grid;
+    grid-template-columns: .8fr .6fr .6fr;
+    gap: 0px;
+    align-items: center;
+    width: 700px;
+}
+
+.scheduleLpositionContent {
+    display: flex;
+    gap: 355px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* @media screen and (max-width : 1324px) {
+    
+}
+
+@media screen and (max-width : 835px) {} */
+
+@media screen and (max-width : 1300px) {
+    .cardForm {
+        width: 315px;
+        /* height: 220px; */
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        border-radius: 20px;
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.05);
+        position: relative;
+        padding: 10px 30px 25px;
+    }
+
+    .text {
+        font-family: "InterRegular";
+        font-size: 18px;
+        width: 200px;
+        -webkit-line-clamp: 4;
+        display: -webkit-box;
+        /* Включаем флексбоксы */
+        -webkit-box-orient: vertical;
+        /* Вертикальная ориентация */
+        overflow: hidden;
+    }
+
+    .title {
+        font-family: "InterBold";
+        font-size: 18px;
+        width: 220px;
+    }
+
+    .cardLogo {
+        width: 100px;
+        height: 100px;
+        border-radius: 12px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .moreDetailsButton {
+        position: absolute;
+        right: 20px;
+        top: 170px;
+    }
+
+    .scheduleLpositionContent {
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    .scheduleTextPosition {
+        width: 330px;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 30px;
+    }
+
+    .scheduleLabel {
+        margin: 5px 0;
+    }
+
+    .moreDetailsButton {
+        gap: 10px
+    }
+
+    .btnModal {
+        align-self: flex-end;
+    }
+
+    .line {
+        border-bottom: 2px solid rgba(156, 156, 156, 0.094);
+        width: 310px;
+        margin-bottom: 25px;
+    }
+}
