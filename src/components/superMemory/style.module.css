@@ -1,0 +1,202 @@
+.superMemoryBlock {
+    background-color: white;
+    /* margin: 0 auto; */
+    /* width: 1250px; */
+    width: 1260px;
+    /* height: 220px; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 25px; */
+    align-items: center;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.05);
+    position: relative;
+    padding: 10px 30px;
+}
+
+.courseContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.courseLogo {
+    min-width: 150px;
+    height: 150px;
+    /* display: inline-block; */
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+}
+
+.descritionBlock {}
+
+.description {
+    font-family: "InterRegular";
+    -webkit-line-clamp: 5;
+    display: -webkit-box;
+    /* Включаем флексбоксы */
+    -webkit-box-orient: vertical;
+    /* Вертикальная ориентация */
+    overflow: hidden;
+}
+
+.title {
+    font-family: "InterBold";
+}
+
+.buttonMore {
+    align-self: flex-end;
+    display: flex;
+    gap: 7px;
+    /* align-items: center; */
+    font-family: "InterRegular";
+    color: rgb(0, 185, 182);
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.imageArrow {
+    height: 20px;
+}
+
+.positionContent{
+    /* margin: 20px 10%; */
+}
+
+.line {
+    border-bottom: 2px solid rgba(156, 156, 156, 0.094);
+    width: 105%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.desctopNone{
+    display: none;
+}
+.mobileNone{
+    display: flex;
+}
+
+.scheduleLabel{
+    margin: 0;
+    font-family: "InterBold";
+}
+.scheduleText{
+    font-family: "InterRegular";
+}
+
+.scheduleTextPosition{
+    display: flex;
+    gap: 100px;
+}
+.schudlePositon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media screen and (max-width: 1373px) {
+    .superMemoryBlock {
+        width: 90dvw;
+        }
+}
+
+@media screen and (max-width: 1061px){
+    .scheduleTextPosition{
+        display: flex;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 908px){
+    .scheduleTextPosition{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .positionContent{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .superMemoryBlock {
+    width: 83dvw;
+    }
+    .schudlePositon{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .positionButton{
+        /* align-self: flex-end; */
+        /* float: right; */
+    }
+    .title {
+        font-size: 16px;
+        /* padding: 0; */
+    }
+    .description{
+        /* padding: 0; */
+    }
+    .mobileNone{
+        display: none;
+    }
+    .desctopNone{
+        display: flex;
+    }
+}
+
+@media screen and  (max-width: 438px) {
+    .descritionBlock{
+        position: relative;
+    }
+    .positionContent{
+        margin: 20px 10%;
+        /*  */
+    }
+    .courseLogo {
+        min-width: 100px;
+        height: 100px;
+    }
+    .buttonMore{
+        position: absolute;
+        bottom: -25px;
+        right: 0px;
+    }
+    .courseContent{
+        padding-bottom: 20px;
+    }
+    .positionContent{
+        margin: 20px 3%;
+    }
+    .superMemoryBlock {
+    width: auto;
+    }
+    
+    .positionButton{
+        align-self: flex-end;
+    }
+    
+    .schudlePositon{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    .scheduleTextPosition{
+        width: 100%;
+    }
+}

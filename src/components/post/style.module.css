@@ -1,0 +1,249 @@
+.modalContent {
+    position: fixed;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border-radius: 15px;
+    /* border: 1px solid #888; */
+    width: 1000px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 1s;
+    z-index: 10040;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+  }
+
+  .videoSizesuperMemory{
+        width: 100%;
+  }
+
+.modalHeader{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* padding: 30px 0  20px 30px; */
+    padding: 0 20px;
+    -webkit-line-clamp: 3; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden; /* Обрезаем вс
+}
+
+.videoSizeMobile{
+    display: none;
+}
+.videoSize{
+    display: flex;
+    margin: 0 auto;
+
+}
+.title{
+   
+    /* position: absolute; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+.closebutton{
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-weight: 700px;
+    color: rgb(0, 205, 172);
+    padding: 2px 10px 6px 8px;
+    background-color: black;
+    border-radius: 15px;
+}
+.logo{
+    width: 250px;
+    margin-top: 20px;
+    /* height: 300px; */
+    /* margin: 50% 0; */
+}
+
+.text{
+    font-family: 'InterRegular';
+    padding: 0 30px;
+    height: 63vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.modalFooter{
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+.modalAnimate{
+    animation-name: animationout;
+    animation-duration: 1s;
+}
+
+.contentBox{
+        display: flex;
+        align-items: start;
+        padding: 0 0px 0 20px;
+}
+
+.mobileFlex{
+    display: none;
+    /* visibility: hidden; */
+}
+
+.videoSize{
+    display: flex;
+}
+
+.title{
+    font-family: "InterBold";
+}
+
+.paragraph .text>*{
+    font-family: 'InterRegular';
+}
+
+@keyframes animatetop {
+    from {
+        top: 0%;
+        opacity: 0
+    }
+
+    to {
+        top: 50%;
+        opacity: 1
+    }
+}
+
+
+@keyframes animationout {
+    from {
+        top: 50%;
+        opacity: 1
+    }
+
+    to {
+        top: 0%;
+        opacity: 0
+    }
+}
+
+@media screen and (max-width : 1024px) {
+    .mobileFlex{
+        display: none;
+        /* visibility: hidden; */
+    }
+}
+
+@media screen and (max-height : 768px) {
+    .mobileFlex{
+        display: none;
+        /* visibility: hidden; */
+    }
+}
+
+@media screen and (max-height : 1081px) {}
+
+@media screen and (max-width : 835px) {
+    .modalContent{
+        width: 700px;
+    }
+    .videoSizeMobile{
+        display: flex;
+        margin: 0 auto;
+    }
+    .videoSize{
+        display: none;
+    }
+}
+
+@media screen and (max-height : 668px) {
+    .text{
+        padding: 0 30px;
+        /* height: 50px; */
+      }
+}
+
+@media screen and (max-width : 660px) {
+    .closebutton{
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-weight: 700px;
+        color: rgb(0, 205, 172);
+        padding: 2px 10px 6px 8px;
+        background-color: black;
+        border-radius: 15px;
+    }
+    .modalContent {
+        position: fixed;
+        justify-content: space-around;
+        /* align-items: center; */
+        flex-direction: column;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border-radius: 0;
+        /* border: 1px solid #888; */
+        width: 100dvw;
+        height: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        animation-name: animatetop;
+        animation-duration: 1s;
+        z-index: 10040;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .modalAnimate{
+        animation-name: animationout;
+        animation-duration: 1s;
+    }
+      .logo{
+        display: none;
+      }
+      .text{
+        padding: 0 30px;
+        height: 65dvh
+      }
+      .contentBox{
+        display: flex;
+        align-items: start;
+        padding: 0 0px 0 0px;
+        }
+        .mobileFlex{
+            display: flex;
+            height: 200px;
+            margin: 0 auto;
+        }
+        .modalFooter{
+            margin: 20px 15px;
+            align-items: center;
+            display: flex;
+            padding: 0;
+            display: flex;
+    align-items: center;
+    /* justify-content: end; */
+    /* height: 100%; */
+        }
+
+        .mobileFlex{
+            display: flex;
+            /* visibility: visible; */
+        }
+    .videoSize{
+        display: none;
+    }
+    .videoSizesuperMemory{
+
+    }
+}
+

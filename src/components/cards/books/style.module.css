@@ -1,0 +1,67 @@
+.booksCard{
+    /* Rectangle 2 */
+width: 574px;
+height: 220px;
+display: flex;
+gap: 15px;
+align-items: center;
+border-radius: 20px;
+background: rgb(255, 255, 255);
+box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.05);
+position: relative;
+padding: 30px 30px;
+}
+
+.bookImage{
+    height: 190px;
+    width: 140px;
+}
+
+.textContent>p{
+    margin: 0px 0 5px 0;
+    font-family: 'InterBold';
+}
+
+.download{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.fontRegular{
+font-family: "InterRegular";
+}
+
+@media screen and (max-width : 1024px) {
+
+}
+
+@media screen and (max-width : 835px) {}
+
+@media screen and (max-width : 660px) {
+    .booksCard{
+        /* Rectangle 2 */
+    width: 334px;
+    height: fit-content;
+    display: flex;
+    gap: 15px;
+    align-items: start;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.05);
+    position: relative;
+    padding: 30px 20px;
+    }
+    .bookImage{
+        height: 140px;
+        width: 90px;
+    }
+    .fontRegular{
+        
+        font-size: 16px;
+    }
+    .textContent{
+        width: 190px;
+        margin-bottom: 70px;
+    }
+}

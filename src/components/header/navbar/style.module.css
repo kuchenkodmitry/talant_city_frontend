@@ -1,0 +1,156 @@
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    gap: 58px;
+    justify-content: center;
+
+    align-items: center;
+    /* padding-top: 15px; */
+    padding: 15px 20px 0 ;
+}
+
+.logo {
+    color: black;
+    font-family: "InterExtraBold";
+    font-size: 32px;
+}
+
+.headerLinks {
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.headerLinks:hover {
+    color:   rgb(0, 205, 172);
+    font-size: 20px;
+}
+
+.nonDecoration {
+    text-decoration: none;
+}
+
+.phoneNumber {
+    position: relative;
+    width: 235px;
+    height: 43px;
+    box-sizing: border-box;
+    border: 1px solid rgba(221, 213, 213, 0.17);
+    border-radius: 26px;
+    font-family: "InterThin";
+    font-size: 18px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 0.71);
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 15px;
+    gap: 15.6px;
+}
+.phoneIco{
+    position: absolute;
+    right: 0;
+}
+.contentHeader {
+    margin-top: 100px;
+    
+}
+
+.leftColumn {}
+
+.rightColumn {}
+
+.mobileNav{
+    display: none;
+}
+
+
+@media screen and (max-width : 1302px) {
+    .navBar {
+        display: flex;
+        flex-direction: row;
+        gap: 0px;
+        justify-content: space-between;
+        align-items: center;
+        /* padding-top: 15px; */
+        padding: 15px 10px 0;
+    }
+}
+
+@media screen and (max-width : 1183px) {
+    .navBar {
+        display: flex;
+        flex-direction: row;
+        gap: 0px;
+        justify-content: space-between;
+        align-items: center;
+        /* padding-top: 15px; */
+        padding: 15px 10px 0;
+    }
+    .headerLinks {
+        display: none;
+    }
+    .mobileNav{
+        display: block;
+    }
+    .mobilePosition{
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* @media screen and (max-width : 835px) {
+    .navBar {
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+    }
+    .headerLinks {
+        display: none;
+    }
+    .mobileNav{
+        display: block;
+    }
+} */
+
+@media screen and (max-width : 660px) {
+    .navBar {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+        /* padding-top: 15px; */
+        padding: 15px 10px 0px;
+    }
+    .headerLinks {
+        display: none;
+    }
+    .mobileNav{
+        display: block;
+    }
+
+    .phoneNumber>p{
+        display: none;
+        width: 43px;
+    height: 43px;
+    
+    }
+    .phoneNumber{
+        width: 30px;
+    height: 26px;
+    padding: 0;
+    margin-left: 50px;
+    }
+    .phoneNumber>img{
+width: 30px;
+    }
+    .logo {
+        color: black;
+        font-family: "InterExtraBold";
+        font-size: 20px;
+    }
+}

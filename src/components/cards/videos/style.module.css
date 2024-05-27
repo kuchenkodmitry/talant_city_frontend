@@ -1,0 +1,49 @@
+.videoCard {
+    width: 1074px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.05);
+    position: relative;
+    padding: 10px 30px 50px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.video{
+    
+}
+
+.videoMobile{
+    display: none;
+}
+
+@media screen and (max-width : 1024px) {
+
+}
+
+@media screen and (max-width : 835px) {}
+
+@media screen and (max-width : 660px) {
+    .video{
+    display: none;
+    }
+    .videoMobile{
+        display: flex;
+    }
+    .videoCard {
+        width: 324px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        border-radius: 20px;
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.05);
+        position: relative;
+        padding: 10px 20px 50px;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
